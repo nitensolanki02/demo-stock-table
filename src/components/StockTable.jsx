@@ -67,6 +67,7 @@ const StockTable = () => {
 				if (item !== name) {
 					return item;
 				}
+				return null;
 			});
 		} else {
 			tempData.push(name);
@@ -103,10 +104,12 @@ const StockTable = () => {
 		if (selectedFilterItems.length === 0) {
 			tempData = columns;
 		} else {
+			debugger;
 			columnData = columnData.filter((item, index) => {
 				if (selectedFilterItems.includes(item.dataIndex)) {
 					return item;
 				}
+				return null;
 			});
 			tempData = [...tempData, ...columnData];
 		}
@@ -120,7 +123,8 @@ const StockTable = () => {
 			<div className="filter-container">
 				<CustomFilter
 					handleFilterSelection={handleFilterSelection}
-					selectedFilterItems={setSelectedFilterItems}
+					selectedFilterItems={selectedFilterItems}
+					setSelectedFilterItems={setSelectedFilterItems}
 					applyFilter={applyFilter}
 				/>
 			</div>

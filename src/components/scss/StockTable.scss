@@ -1,5 +1,6 @@
 #stock-table {
 	width: 100%;
+	position: relative;
 	.heading {
 		margin-top: 20px;
 		letter-spacing: 0.02em;
@@ -41,6 +42,12 @@
 			border-radius: 10px;
 			background: 6px rgba(0, 0, 0, 0.2);
 		}
+	}
+	.filter-container {
+		z-index: 999;
+		margin-bottom: 5vh;
+		position: fixed;
+		bottom: 0px;
 	}
 	// .ant-table-thead {
 	// 	.ant-table-cell {
