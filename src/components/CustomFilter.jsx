@@ -95,6 +95,14 @@ const CustomFilter = (props) => {
 					>
 						Apply
 					</button>
+					<button
+						className="clear-btn"
+						onClick={() => {
+							props.setSelectedFilterItems([]);
+						}}
+					>
+						Clear all
+					</button>
 				</div>
 			</div>
 		</div>

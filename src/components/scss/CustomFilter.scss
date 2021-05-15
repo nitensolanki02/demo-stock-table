@@ -84,6 +84,13 @@
 			border-radius: 10px;
 			background: 6px rgba(0, 0, 0, 0.2);
 		}
+		.clear-filter-btn {
+			padding: 10px 6px;
+			width: 100%;
+			position: sticky;
+			bottom: 0px;
+			// top: 0px;
+		}
 	}
 	.apply-btn-container {
 		width: 100%;
@@ -106,8 +113,21 @@
 				background: #6fb9ff;
 			}
 		}
+		.clear-btn {
+			border: none;
+			width: 100%;
+			margin-top: 5px;
+			background: #0a0a0a;
+			color: white;
+			border-radius: 25px;
+			padding: 8px;
+			cursor: pointer;
+			transition: all 0.15s cubic-bezier(0.175, 0.885, 0.32, 1);
+			&:hover {
+				background: #252525;
+			}
+		}
 	}
-
 	.label-container {
 		padding-right: 10px;
 		padding-left: 10px;
