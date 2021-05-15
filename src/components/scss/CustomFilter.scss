@@ -69,8 +69,8 @@
 		position: relative;
 		background-color: #ffffff;
 		position: absolute;
-		left: 25px;
-		top: -400px;
+		left: 50px;
+		top: -510px;
 		box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
 		transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1);
 		z-index: 999;
@@ -150,7 +150,7 @@
 	}
 	.open-filter-container {
 		width: 250px;
-		height: 400px !important;
+		height: 500px !important;
 		// padding: 10px 10px;
 	}
 
